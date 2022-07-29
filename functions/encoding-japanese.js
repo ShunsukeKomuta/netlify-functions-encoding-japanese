@@ -21,7 +21,7 @@ exports.handler = async function (event, context, callback) {
         .replace("charset=Shift_JIS", "charset=UTF-8")
         .replace('<?xml version="1.0" encoding="shift_jis"?>', '');
       break;
-    case "EUCJP"
+    case "EUCJP":
       replaced = utf8text
         .replace("charset=EUC-JP", "charset=UTF-8")
         .replace('<?xml version="1.0" encoding="euc_jp"?>', '');
